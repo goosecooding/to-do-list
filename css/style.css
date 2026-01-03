@@ -81,16 +81,20 @@ body::after {
 
 .todoapp form {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
 .todoapp input[type="text"] {
-  flex: 1;
+  flex: 1 1 200px;
   padding: 10px;
   border: none;
   border-radius: 10px;
   font-size: clamp(14px, 2vw, 24px);
   font-family: 'Poppins', sans-serif;
+  min-width: 0;
   transition: all 0.3s ease;
 }
 .todoapp input:focus {
@@ -98,8 +102,7 @@ body::after {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
 .todoapp button {
-  padding: 10px 20px;
-  border: none;
+  padding: clamp(10px, 2vw, 20px) clamp(10px, 4vw, 40px);
   border-radius: 10px;
   background-color: #2575fc;
   color: #fff;
@@ -107,6 +110,8 @@ body::after {
   font-family: 'Poppins', sans-serif;
   border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
+  flex: 0 0 auto;
+  white-space: nowrap;
   transition: background-color 0.3s ease;
 }
 .todoapp button:hover {
