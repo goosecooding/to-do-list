@@ -224,7 +224,7 @@ body::after {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 60px;
+  gap: 80px;
   height: 100vh;
   color: #eaeaea;
   font-family: 'Poppins', sans-serif;
